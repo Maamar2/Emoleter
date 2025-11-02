@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmoLetr - Tableau de Bord d'Analyse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">EmoLetr</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">À Propos</a>
+                <a href="#" class="nav-link">Compte</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">Tableau de Bord d'Analyse</h1>
+        <p class="hero-subtitle">
+            Analysez les émotions dans vos textes français avec notre <span class="highlight">IA spécialisée</span> en littérature post-coloniale algérienne
+        </p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Left Card - Text Input -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon purple">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <h2 class="card-title">Saisie du Texte</h2>
+            </div>
+            <p class="card-label">Texte à analyser</p>
+            <textarea class="text-input" placeholder="Saisissez votre texte français ici pour l'analyse émotionnelle...n'hésitez pas à copier-coller un fichier, ou qui peut dans cette zone."></textarea>
+            
+            <div class="file-upload-section">
+                <p class="upload-label">Importer un fichier</p>
+                <button class="upload-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    Choisir un fichier (.txt, .pdf)
+                </button>
+                <p class="upload-hint">Formats supportés: Fichiers texte (.txt) et documents PDF (.pdf)</p>
+            </div>
+
+            <button class="primary-button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 11l3 3L22 4"></path>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+                Configurer l'analyse
+            </button>
+        </div>
+
+        <!-- Right Card - Analysis Results -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon purple">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                </div>
+                <h2 class="card-title">Resultats d'Analyse</h2>
+            </div>
+            
+            <div class="welcome-section">
+                <div class="welcome-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
+                </div>
+                <h3 class="welcome-title">Bienvenue sur EmoLetr</h3>
+                <p class="welcome-text">
+                    Analysez les émotions dans vos textes français avec notre IA spécialisée. Saisissez votre texte ou importez un fichier pour commencer l'analyse...
+                </p>
+                <div class="feature-tags">
+                    <span class="feature-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        </svg>
+                        Fichier .txt
+                    </span>
+                    <span class="feature-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        </svg>
+                        Fichier .pdf
+                    </span>
+                    <span class="feature-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        </svg>
+                        Texte français
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2 class="section-title">À Propos d'EmoLetr</h2>
+        <p class="section-subtitle">
+            Plateforme académique spécialisée pour l'analyse sophistiquée des émotions dans les textes littéraires Algérienne
+        </p>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon purple">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Analyse Avancée</h3>
+                <p class="feature-description">
+                    Détection sophistiquée des émotions avec expertise en littérature post-coloniale
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon purple">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Focus Académique</h3>
+                <p class="feature-description">
+                    Conçu pour les chercheurs, professeurs et étudiants en littérature française
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon purple">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16v-4"></path>
+                        <path d="M12 8h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Contexte Culturel</h3>
+                <p class="feature-description">
+                    Compréhension spécialisée des nuances culturelles de la littérature Maghrebine
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Origin Section -->
+    <section class="origin-section">
+        <div class="origin-card">
+            <div class="origin-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+                </svg>
+            </div>
+            <h2 class="origin-title">Origine du Projet</h2>
+            <p class="origin-text">
+                Ce projet est né au <strong>laboratoire LAIRID</strong> de l'Université Mohamed Khider De Biskra, avec l'objectif ambitieux de <strong>maîtriser en lumière</strong> la richesse émotionnelle de la littérature
+            </p>
+            <div class="origin-tags">
+                <span class="origin-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    Université Mohamed Khider
+                </span>
+                <span class="origin-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Laboratoire LAIRID
+                </span>
+                <span class="origin-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    </svg>
+                    Biskra, Algérie
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">© 2025 EmoLetr Platform. Plateforme d'analyse émotionnelle littéraire algérienne.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
